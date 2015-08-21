@@ -104,5 +104,15 @@ namespace MkdnViewer
             //TODO: Save application state and stop any background activity
             deferral.Complete();
         }
+
+        /// <summary>
+        /// Invoked when a user double click .mk file
+        /// create new window and open file if app is running state
+        /// </summary>
+        /// <param name="args"></param>
+        protected override void OnFileActivated(FileActivatedEventArgs args)
+        {
+            // Todo
+        }
     }
 }
