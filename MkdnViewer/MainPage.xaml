@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="MkdnViewer.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MkdnViewer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.TopAppBar>
+        <CommandBar>
+            <AppBarButton Label="Open" Icon="OpenFile" Click="OpenAppBarButton_Click" />
+            <AppBarButton Label="Export" Icon="Save" Click="ExportAppBarButton_Click" />
+         </CommandBar>
+    </Page.TopAppBar>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <WebView x:Name="webView" />
+    </Grid>
+</Page>
